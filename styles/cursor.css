@@ -1,0 +1,34 @@
+
+/* ── GLOBAL DEFAULT CURSOR ── */
+*, *::before, *::after {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='4' fill='%23FF3E9B'/%3E%3Ccircle cx='12' cy='12' r='10' fill='none' stroke='%23FF3E9B' stroke-width='1.5' stroke-opacity='0.5'/%3E%3C/svg%3E") 12 12, auto;
+}
+
+/* ── POINTER CURSOR (links, buttons) ── */
+a,
+button,
+[role="button"],
+label[for],
+select,
+input[type="submit"],
+input[type="button"],
+input[type="reset"],
+.hoverable {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='4' fill='%2366D0BC'/%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%2366D0BC' stroke-width='1.5' stroke-opacity='0.6'/%3E%3C/svg%3E") 16 16, pointer;
+}
+
+/* ── TEXT CURSOR ── */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"],
+textarea,
+[contenteditable] {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='3' fill='%23FF88BA'/%3E%3Ccircle cx='12' cy='12' r='9' fill='none' stroke='%23FF88BA' stroke-width='1' stroke-opacity='0.5' stroke-dasharray='3 2'/%3E%3C/svg%3E") 12 12, text;
+}
+
+/* ── DISABLED CURSOR ── */
+[disabled],
+[aria-disabled="true"] {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='4' fill='%237a8f92'/%3E%3Ccircle cx='12' cy='12' r='10' fill='none' stroke='%237a8f92' stroke-width='1' stroke-opacity='0.4'/%3E%3C/svg%3E") 12 12, not-allowed;
+}

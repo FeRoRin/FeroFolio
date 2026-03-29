@@ -1,0 +1,3 @@
+# Drop self-hosted font files here (.woff2 recommended).
+# Then update the @font-face rules in styles/main.css.
+# Currently using Google Fonts CDN (no files needed).

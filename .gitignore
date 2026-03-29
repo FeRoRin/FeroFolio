@@ -1,0 +1,22 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Env / secrets — never commit these
+.env
+.env.local
+*.env
+
+# Node (if you ever add a build tool)
+node_modules/
+npm-debug.log*
+
+# Build output
+dist/
+build/

@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Firdaouss El Ouahabi — Full-Stack Developer</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/images/profile/favicon.ico">
+
+
+  <!-- SEO -->
+  <meta name="description" content="Full-stack developer from Tangier, Morocco. Specializing in Laravel, Vue 3, and scalable API architecture.">
+  <meta name="author" content="Firdaouss El Ouahabi">
+  <meta property="og:title"       content="Firdaouss El Ouahabi — Full-Stack Developer">
+  <meta property="og:description" content="Laravel · Vue 3 · PHP · REST APIs. Based in Tangier, open to remote work.">
+  <meta property="og:type"        content="website">
+
+  <!-- Fonts (Google Fonts CDN) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@400;500&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/main.css">
+   <link rel="stylesheet" href="styles/cursor.css">
+</head>
+<body>
+
+
+<!-- ══════════════════════════════════════════
+     THEME TOGGLE
+══════════════════════════════════════════ -->
+<button id="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle theme">☀️</button>
+
+
+<!-- ══════════════════════════════════════════
+     NAVIGATION
+══════════════════════════════════════════ -->
+<nav>
+  <a href="#hero" class="nav-logo">Fero<span>.</span></a>
+
+
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#about"    class="nav-link-item">about</a></li>
+    <li><a href="#stack"    class="nav-link-item">stack</a></li>
+    <li><a href="#projects" class="nav-link-item">projects</a></li>
+    <li><a href="#contact"  class="nav-link-item">contact</a></li>
+  </ul>
+
+  <a href="#contact" class="nav-cta">hire me</a>
+
+  <!--
+    HAMBURGER BUTTON — NEW (hidden on desktop via CSS display:none).
+    Three <span> bars animate to an X when .open is added by JS.
+    aria-label and aria-expanded provide screen-reader context.
+    aria-controls links this button to the nav-links drawer.
+  -->
+  <button
+    class="nav-menu-btn"
+    id="nav-menu-btn"
+    aria-label="Toggle navigation menu"
+    aria-expanded="false"
+    aria-controls="nav-links"
+  >
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+
+
+<!-- ══════════════════════════════════════════
+     01 · HERO
+══════════════════════════════════════════ -->
+<section id="hero">
+  <div class="container">
+    <div class="hero-grid">
+
+      <div class="hero-left">
+        <div class="hero-badge">available for hire · Tangier, Morocco</div>
+        <h1 class="hero-name">
+          Firdaouss<br>
+          <span class="line2">El Ouahabi</span>
+        </h1>
+        <p class="hero-title">
+          Full-stack developer specializing in <strong>Laravel</strong>, <strong>Vue 3</strong>,
+          and scalable API architecture. I turn complex backend problems into clean, maintainable systems.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">view my work</a>
+          <a href="https://github.com/FeRoRin" target="_blank" rel="noopener" class="btn-ghost">GitHub ↗</a>
+        </div>
+      </div>
+
+      <!-- Floating code card (decorative) -->
+      <div class="hero-visual">
+        <div class="hero-card main">
+          <span class="code-line"><span class="code-cmt">// Firdaouss El Ouahabi</span></span>
+          <span class="code-line"></span>
+          <span class="code-line"><span class="code-kw">const</span> <span class="code-fn">developer</span> = {</span>
+          <span class="code-line">&nbsp;&nbsp;stack: [<span class="code-str">'Laravel'</span>, <span class="code-str">'Vue3'</span>, <span class="code-str">'PHP'</span>],</span>
+          <span class="code-line">&nbsp;&nbsp;experience: <span class="code-str">'5+ years'</span>,</span>
+          <span class="code-line">&nbsp;&nbsp;location: <span class="code-str">'Tangier 🇲🇦'</span>,</span>
+          <span class="code-line">&nbsp;&nbsp;status: <span class="code-str">'open to work'</span>,</span>
+          <span class="code-line">&nbsp;&nbsp;motto: <span class="code-str">'clean arch wins'</span></span>
+          <span class="code-line">}</span>
+        </div>
+        <div class="hero-card mini">
+          <div style="margin-bottom:14px">
+            <div class="stat-row"><div class="stat-dot"></div></div>
+            <div class="stat-num">5+</div>
+            <div class="stat-label">years freelancing</div>
+          </div>
+          <div>
+            <div class="stat-row"><div class="stat-dot orange"></div></div>
+            <div class="stat-num">10+</div>
+            <div class="stat-label">projects shipped</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     02 · ABOUT
+══════════════════════════════════════════ -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+
+      <div class="about-text reveal">
+       <span class="section-tag">// 01. about</span>
+        <h2 class="section-title">The developer<br>behind the code</h2>
+
+        <p>I'm a full-stack developer based in <strong>Tangier, Morocco</strong>, with a background in
+          computer engineering and 5+ years of hands-on freelance experience. My journey combines
+          formal education with continuous self-learning driven by curiosity and real-world projects.</p>
+
+        <p>I started coding with a passion for building games — that creative mindset still drives how I
+          approach product development today.</p>
+
+        <p>My strength is <strong>backend architecture</strong>: designing scalable APIs, multi-tenant systems,
+          queue-driven workflows, and clean domain logic. I complement that with solid
+          <strong>Vue 3 frontends</strong> that are fast and maintainable.</p>
+
+        <div class="about-quote">"Clean architecture wins battles."</div>
+
+        <p>Currently building <strong>HajezPro</strong> — a SaaS booking platform for local businesses
+          in Morocco — while actively looking for a full-stack or backend role where I can solve complex problems.</p>
+      </div>
+
+      <div class="about-stats reveal">
+        <div class="stat-card" style="grid-column: 1 / -1;">
+          <div class="num">5+</div>
+          <div class="label">years of freelance experience</div>
+        </div>
+        <div style="height:16px; grid-column: 1 / -1;"></div>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+          <div class="stat-card">
+            <div class="num" style="font-size:32px;">10+</div>
+            <div class="label">projects shipped</div>
+          </div>
+          <div class="stat-card">
+            <div class="num" style="font-size:32px;">Lv.9</div>
+            <div class="label">backend expertise</div>
+          </div>
+          <div class="stat-card">
+            <div class="num" style="font-size:32px; color:var(--accent2);">3</div>
+            <div class="label">languages spoken</div>
+          </div>
+          <div class="stat-card">
+            <div class="num" style="font-size:32px; color:#a78bfa;">∞</div>
+            <div class="label">ideas in the queue</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     03 · STACK
+══════════════════════════════════════════ -->
+<section id="stack">
+  <div class="container">
+    <div class="stack-intro">
+      <div class="reveal">
+        <span class="section-tag">// 02. skills &amp; stack</span>
+        <h2 class="section-title">Tools I trust<br>in production</h2>
+      </div>
+      <p class="stack-desc reveal">
+        Backend-focused with solid frontend experience. I combine formal training with real-world freelance work,
+        choosing the right tools to build scalable and maintainable systems.
+      </p>
+    </div>
+
+    <div class="skill-groups reveal">
+      <div class="skill-group">
+        <span class="skill-name">Backend / Laravel</span>
+        <div class="skill-bar"><div class="skill-fill" data-width="0.92"></div></div>
+        <span class="skill-level">92</span>
+      </div>
+      <div class="skill-group">
+        <span class="skill-name">PHP</span>
+        <div class="skill-bar"><div class="skill-fill" data-width="0.90"></div></div>
+        <span class="skill-level">90</span>
+      </div>
+      <div class="skill-group">
+        <span class="skill-name">C# / .NET</span>
+        <div class="skill-bar"><div class="skill-fill" data-width="0.70"></div></div>
+        <span class="skill-level">70</span>
+      </div>
+      <div class="skill-group">
+        <span class="skill-name">Vue 3</span>
+        <div class="skill-bar"><div class="skill-fill" data-width="0.82"></div></div>
+        <span class="skill-level">82</span>
+      </div>
+      <div class="skill-group">
+        <span class="skill-name">Databases (MySQL / SQL Server)</span>
+        <div class="skill-bar"><div class="skill-fill" data-width="0.85"></div></div>
+        <span class="skill-level">85</span>
+      </div>
+      <div class="skill-group">
+        <span class="skill-name">REST API Design</span>
+        <div class="skill-bar"><div class="skill-fill" data-width="0.90"></div></div>
+        <span class="skill-level">90</span>
+      </div>
+      <div class="skill-group">
+        <span class="skill-name">Docker / CI/CD</span>
+        <div class="skill-bar"><div class="skill-fill" data-width="0.65"></div></div>
+        <span class="skill-level">65</span>
+      </div>
+      <div class="skill-group">
+        <span class="skill-name">AWS / Cloud</span>
+        <div class="skill-bar"><div class="skill-fill" data-width="0.58"></div></div>
+        <span class="skill-level">58</span>
+      </div>
+    </div>
+
+    <div class="tech-cloud reveal">
+      <span class="tech-tag primary">Laravel</span>
+      <span class="tech-tag primary">PHP</span>
+      <span class="tech-tag primary">Vue 3</span>
+      <span class="tech-tag primary">REST API</span>
+      <span class="tech-tag primary">MySQL</span>
+
+      <span class="tech-tag">C#</span>
+      <span class="tech-tag">.NET Core</span>
+      <span class="tech-tag">ASP.NET</span>
+      <span class="tech-tag">Entity Framework</span>
+      <span class="tech-tag">LINQ</span>
+
+      <span class="tech-tag">SQL Server</span>
+      <span class="tech-tag">PostgreSQL</span>
+      <span class="tech-tag">MongoDB</span>
+
+      <span class="tech-tag">Docker</span>
+      <span class="tech-tag">GitHub Actions</span>
+      <span class="tech-tag">AWS EC2</span>
+      <span class="tech-tag">Firebase</span>
+
+      <span class="tech-tag">JavaScript</span>
+      <span class="tech-tag">Spring Boot</span>
+      <span class="tech-tag">Git</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     04 · PROJECTS
+══════════════════════════════════════════ -->
+<section id="projects">
+  <div class="container">
+
+    <div class="projects-header reveal">
+      <div>
+        <span class="section-tag">// 03. projects</span>
+        <h2 class="section-title" style="margin-bottom:0;">Selected work</h2>
+      </div>
+      <div class="filter-tabs">
+        <button class="filter-tab active"  onclick="filterProjects('all',    this)">All</button>
+        <button class="filter-tab"         onclick="filterProjects('open',   this)">Open source</button>
+        <button class="filter-tab"         onclick="filterProjects('client', this)">Client work</button>
+        <button class="filter-tab"         onclick="filterProjects('saas',   this)">SaaS</button>
+      </div>
+    </div>
+
+    <div class="projects-grid" id="projects-grid">
+
+      <!-- 1. Velvet Salon (featured / full-stack) -->
+      <div class="project-card reveal" data-type="open">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#0f1a1a,#1a2e2e);">
+          <div class="thumb-inner" style="color:#2dd4bf;opacity:0.35;">VS</div>
+        </div>
+        <div class="project-body">
+          <div class="project-type"><div class="type-dot open"></div> Open source · Full-stack</div>
+          <div class="project-name">Velvet Salon <span style="font-size:13px;color:var(--accent);">⭐ Featured</span></div>
+          <p class="project-desc">Modern full-stack salon reservation system with a luxury UI. Vue 3 SPA consuming
+            a dedicated Laravel REST API — booking calendar, staff management, and slot visualization.</p>
+          <div class="project-tags">
+            <span class="p-tag">Laravel</span><span class="p-tag">Vue 3</span>
+            <span class="p-tag">REST API</span><span class="p-tag">Tailwind</span>
+            <span class="p-tag">Pinia</span><span class="p-tag">Vite</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/FeRoRin/salon-reservation-api" target="_blank" rel="noopener" class="p-link">
+              <svg viewBox="0 0 24 24" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              Backend repo
+            </a>
+            <a href="https://github.com/FeRoRin/velvet-salon-frontend" target="_blank" rel="noopener" class="p-link">
+              <svg viewBox="0 0 24 24" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              Frontend repo
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. Hotel Booking System (API version) -->
+      <div class="project-card reveal" data-type="open">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#0f2218,#1a3a28);">
+          <div class="thumb-inner" style="color:#34d399;opacity:0.35;">HB</div>
+          <div class="project-lock">
+            <div class="lock-badge">💼 Real client</div>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-type"><div class="type-dot open"></div> REST API · Private</div>
+          <div class="project-name">Hotel Booking System <span style="font-size:12px;color:var(--text-muted);">API version</span></div>
+          <p class="project-desc">Improved hotel booking system rebuilt with a clean RESTful API layer. Separates
+            frontend and backend concerns, enabling scalability and third-party integrations.</p>
+          <div class="project-tags">
+            <span class="p-tag">PHP</span><span class="p-tag">MySQL</span>
+            <span class="p-tag">REST API</span><span class="p-tag">Authentication</span>
+          </div>
+          <div class="project-links">
+            <span class="p-link" style="cursor:default;">Code private · available on request</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. Hotel Booking System (basic) -->
+      <div class="project-card reveal" data-type="open">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#0d1f14,#163024);">
+          <div class="thumb-inner" style="color:#6ee7b7;opacity:0.3;">HB</div>
+        </div>
+        <div class="project-body">
+          <div class="project-type"><div class="type-dot open"></div> Open source</div>
+          <div class="project-name">Hotel Booking System <span style="font-size:12px;color:var(--text-muted);">Core version</span></div>
+          <p class="project-desc">Staff-facing hotel reservation system built with PHP &amp; MySQL. Full CRUD
+            operations, daily room availability management, and a clean admin interface.</p>
+          <div class="project-tags">
+            <span class="p-tag">PHP</span><span class="p-tag">MySQL</span>
+            <span class="p-tag">MVC</span><span class="p-tag">JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/FeRoRin/hotel-booking-system" target="_blank" rel="noopener" class="p-link">
+              <svg viewBox="0 0 24 24" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              View code
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. Charity Donation Website (Client) -->
+      <div class="project-card reveal" data-type="client">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#1a0f0a,#2e1a10);">
+          <div class="thumb-inner" style="color:#fb923c;opacity:0.3;">CW</div>
+          <div class="project-lock">
+            <div class="lock-badge">💼 Real client</div>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-type"><div class="type-dot client"></div> Client work · Private</div>
+          <div class="project-name">Charity Donation Website</div>
+          <p class="project-desc">Real client project for a charity organization. Online donation system and
+            campaign management built on WordPress with GiveWP, custom PHP, and JavaScript.</p>
+          <div class="project-tags">
+            <span class="p-tag">WordPress</span><span class="p-tag">GiveWP</span>
+            <span class="p-tag">PHP</span><span class="p-tag">JavaScript</span><span class="p-tag">Divi</span>
+          </div>
+          <div class="project-links">
+             <a href="https://rissalacharity.org/en/" target="_blank" rel="noopener" class="p-link">
+            <span class="p-link" style="cursor:default;">Live Production Website</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. HajezPro (flagship / in progress) -->
+      <div class="project-card reveal" data-type="saas">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#1a1040,#2d1f60);">
+          <div class="thumb-inner" style="color:#a78bfa;opacity:0.4;">HP</div>
+        </div>
+        <div class="project-body">
+          <div class="project-type"><div class="type-dot saas"></div> SaaS · In progress (~60%)</div>
+          <div class="project-name">HajezPro <span style="font-size:13px;color:#a78bfa;">🚀 Flagship</span></div>
+          <p class="project-desc">Scalable multi-service booking platform for local businesses in Morocco —
+            salons, clinics, studios. Multi-tenant architecture, real-time slot management, and SMS notifications.</p>
+          <div class="project-tags">
+            <span class="p-tag">Laravel</span><span class="p-tag">Vue 3</span>
+            <span class="p-tag">MySQL</span><span class="p-tag">REST API</span><span class="p-tag">Redis</span>
+          </div>
+          <div class="project-links">
+            <span class="p-link" style="cursor:default;">In progress</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6. Email Marketing Platform (in progress) -->
+      <div class="project-card reveal" data-type="saas">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#0e1520,#1a2535);">
+          <div class="thumb-inner" style="color:#818cf8;opacity:0.3;">EM</div>
+        </div>
+        <div class="project-body">
+          <div class="project-type"><div class="type-dot saas"></div> SaaS · In progress</div>
+          <div class="project-name">Email Marketing Platform</div>
+          <p class="project-desc">Multi-tenant email marketing SaaS with Laravel queue architecture,
+            campaign scheduling, audience segmentation, open/click tracking, and per-tenant subdomain routing.</p>
+          <div class="project-tags">
+            <span class="p-tag">Laravel</span><span class="p-tag">Queues</span>
+            <span class="p-tag">Multi-tenant</span><span class="p-tag">Redis</span>
+          </div>
+          <div class="project-links">
+            <span class="p-link" style="cursor:default;">In progress</span>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /projects-grid -->
+
+    <!-- Coming soon -->
+    <div class="coming-soon-row reveal">
+      <div class="cs-card">
+        <div class="cs-icon">📝</div>
+        <div class="cs-info">
+          <div class="cs-title">Blog — coming soon</div>
+          <div class="cs-sub">Laravel tips, architecture patterns, SaaS building in Morocco. Subscribe for updates.</div>
+        </div>
+      </div>
+      <div class="cs-card">
+        <div class="cs-icon">🛒</div>
+        <div class="cs-info">
+          <div class="cs-title">Products — coming soon</div>
+          <div class="cs-sub">Paid starter kits, boilerplates and templates. Laravel + Vue ready to deploy.</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     05 · CONTACT
+══════════════════════════════════════════ -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- Left: links -->
+      <div class="contact-left reveal">
+        <span class="section-tag">// 04. contact</span>
+        <h2 class="section-title">Let's build<br>something.</h2>
+        <p class="contact-desc">Open to full-time roles, remote contracts, and interesting freelance
+          projects. Response within 24h.</p>
+        <div class="contact-links">
+
+          <a href="elouahabifirdaouss@gmail.com" class="contact-link">
+            <div class="cl-icon">✉</div>
+            <div class="cl-info">
+              <div class="cl-name">Email</div>
+              <div class="cl-handle">elouahabifirdaouss@gmail.com</div>
+            </div>
+          </a>
+
+          <a href="https://www.linkedin.com/in/firdaouss-el-ouahabi" target="_blank" rel="noopener" class="contact-link">
+            <div class="cl-icon" style="font-size:16px;font-family:var(--font-mono);font-weight:700;color:#60a5fa;">in</div>
+            <div class="cl-info">
+              <div class="cl-name">LinkedIn</div>
+              <div class="cl-handle">in/firdaouss-el-ouahabi</div>
+            </div>
+          </a>
+
+          <a href="https://github.com/FeRoRin" target="_blank" rel="noopener" class="contact-link">
+            <div class="cl-icon" style="font-size:16px;font-family:var(--font-mono);font-weight:700;">GH</div>
+            <div class="cl-info">
+              <div class="cl-name">GitHub</div>
+              <div class="cl-handle">@FeRoRin</div>
+            </div>
+          </a>
+
+          <a href="https://t.me/feroTaan" target="_blank" rel="noopener" class="contact-link">
+            <div class="cl-icon" style="font-size:16px;color:#38bdf8;">✈</div>
+            <div class="cl-info">
+              <div class="cl-name">Telegram</div>
+              <div class="cl-handle">@feroTaan</div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+      <!-- Right: contact form -->
+      <div class="reveal">
+
+        <form
+          id="contact-form"
+          class="contact-form"
+          action="https://formspree.io/f/xlgodqkw"
+          method="POST"
+        >
+          <!-- Honeypot anti-spam field (hidden from humans) -->
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="type">project type</label>
+            <select id="type" name="project_type">
+              <option value="">Select type…</option>
+              <option>Full-time role</option>
+              <option>Freelance project</option>
+              <option>Remote contract</option>
+              <option>Collaboration</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">message</label>
+            <textarea id="message" name="message" placeholder="Tell me about your project or opportunity…" required></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit" id="submit-btn">Send message →</button>
+
+          <div id="form-success">
+            ✓ Message sent! I'll reply within 24h.
+          </div>
+          <div id="form-error"></div>
+
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-copy">© 2026 Firdaouss El Ouahabi · Built with love in Tangier 🇲🇦 </div>
+      <div class="footer-mark">Fero<span>.</span></div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="scripts/main.js" defer></script>
+<script src="scripts/cursor.js" defer></script>
+</body>
+</html>
